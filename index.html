@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left">
+        <div class="searchBox">
+          <input type="text" name="city" placeholder="Search city" id="city" />
+          <button class="btn-search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="tempHolder">
+          <img
+            src="https://openweathermap.org/img/w/01d.png
+         "
+            alt=""
+          />
+          <p class="large-text">
+            <span id="mainTemp">12</span><span>°<sup>c</sup> </span>
+          </p>
+          <p id="time"></p>
+        </div>
+        <div class="countryHolder">
+          <div class="main-container">
+            <i class="fab fa-skyatlas"></i> <span id="main">Cloudy</span>
+          </div>
+          <p id="cityName">New York,</p>
+          <p id="country">USA</p>
+        </div>
+      </div>
+      <div class="right">
+        <h2>Today's Highlights</h2>
+        <div class="highlightHolder">
+          <div class="h-cont">
+            <p class="head">Humidity</p>
+            <p class="value"><span id="humidity">100</span><span>%</span></p>
+            <p class="status">Average</p>
+          </div>
+          <div class="h-cont">
+            <p class="head">Cloudiness</p>
+            <p class="value"><span id="cloudy">100</span><span>%</span></p>
+            <p class="status">Average</p>
+          </div>
+          <div class="h-cont">
+            <p class="head">Wind speed</p>
+            <p class="value"><span id="wind">7.7</span><span>Km/s</span></p>
+            <p class="status">Average</p>
+          </div>
+          <div class="h-cont">
+            <p class="head">Sunrise Time</p>
+            <p class="value" id="sunrise">7.7km/s</p>
+            <p class="status">Average</p>
+          </div>
+          <div class="h-cont">
+            <p class="head">Sunset Time</p>
+            <p class="value" id="sunset">7.7km/s</p>
+            <p class="status">Average</p>
+          </div>
+          <div class="h-cont">
+            <p class="head">Pressure</p>
+            <p class="value"><span id="pressure">7.7</span><span>hPa</span></p>
+            <p class="status">Average</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

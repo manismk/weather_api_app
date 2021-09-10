@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --light-primary: #efefef;
+  --white: #fff;
+  --yellow: #fea31f;
+  --dark-primary: #a4a6ac;
+}
+body {
+  background-color: var(--dark-primary);
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  max-width: 768px;
+  background-color: var(--light-primary);
+  margin: 4rem auto;
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.left {
+  width: 30%;
+  background-color: var(--white);
+
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  padding: 2rem 1rem;
+}
+
+.searchBox {
+  background-color: var(--light-primary);
+  padding: 0.8rem;
+  border-radius: 0.8rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.searchBox input {
+  background-color: var(--light-primary);
+  width: 87%;
+  font-family: inherit;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+}
+.searchBox .btn-search {
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+.searchBox .btn-search i {
+  font-size: 1.2rem;
+}
+
+.right h2 {
+  text-align: center;
+}
+
+.tempHolder,
+.countryHolder {
+  display: flex;
+
+  align-items: center;
+
+  flex-direction: column;
+}
+.tempHolder img {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  padding: 0.5rem 0;
+}
+.tempHolder .large-text {
+  font-size: 3.5rem;
+  padding: 0.5rem 0;
+}
+.tempHolder #time {
+  font-weight: bold;
+  padding: 0.5rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--yellow);
+}
+
+.countryHolder .main-container {
+  padding: 0.5rem 0;
+  padding-top: 1rem;
+}
+.countryHolder #cityName,
+.countryHolder #country {
+  padding: 0.5rem 0;
+  font-weight: bold;
+}
+.right {
+  width: 70%;
+  background-color: var(--light-primary);
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  padding: 2rem;
+}
+.right .highlightHolder {
+  margin-top: 1rem;
+  width: 100%;
+  height: calc(100% - 1.5em - 1rem);
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.h-cont {
+  margin: 0.5rem 0;
+  background-color: var(--white);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.h-cont .head {
+  color: var(--dark-primary);
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+.h-cont .value {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
