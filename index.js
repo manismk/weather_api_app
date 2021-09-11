@@ -52,7 +52,7 @@ cityBtn.addEventListener("click", () => {
   if (city.value === "") {
     showMessage("Please enter anything");
   } else {
-    //getData(city.value);
+    getData(city.value);
   }
 });
 
