@@ -18,12 +18,13 @@
       <div class="left">
         <div class="searchBox">
           <input type="text" name="city" placeholder="Search city" id="city" />
-          <button class="btn-search">
+          <button class="btn-search" id="cityBtn">
             <i class="fa fa-search" aria-hidden="true"></i>
           </button>
         </div>
         <div class="tempHolder">
           <img
+            id="icon"
             src="https://openweathermap.org/img/w/01d.png
          "
             alt=""
@@ -35,14 +36,14 @@
         </div>
         <div class="countryHolder">
           <div class="main-container">
-            <i class="fab fa-skyatlas"></i> <span id="main">Cloudy</span>
+            <span id="main">Cloudy, </span><span id="mainDesc">Cloudy sky</span>
           </div>
           <p id="cityName">New York,</p>
           <p id="country">USA</p>
         </div>
       </div>
       <div class="right">
-        <h2>Today's Highlights</h2>
+        <h2 id="message">Today's Highlights</h2>
         <div class="highlightHolder">
           <div class="h-cont">
             <p class="head">Humidity</p>
@@ -56,17 +57,17 @@
           </div>
           <div class="h-cont">
             <p class="head">Wind speed</p>
-            <p class="value"><span id="wind">7.7</span><span>Km/s</span></p>
+            <p class="value"><span id="wind">7.7</span><span>m/s</span></p>
             <p class="status">Average</p>
           </div>
           <div class="h-cont">
             <p class="head">Sunrise Time</p>
-            <p class="value" id="sunrise">7.7km/s</p>
+            <p class="value" id="sunrise">7:00Am</p>
             <p class="status">Average</p>
           </div>
           <div class="h-cont">
             <p class="head">Sunset Time</p>
-            <p class="value" id="sunset">7.7km/s</p>
+            <p class="value" id="sunset">6:00PM</p>
             <p class="status">Average</p>
           </div>
           <div class="h-cont">
